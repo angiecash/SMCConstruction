@@ -1,0 +1,33 @@
+"use strict";
+
+/* Functions */
+function changeClass(event) {
+event.preventDefault();
+
+//Should be the link that was clicked
+let navElement = event.target.innerText.toLowerCase();
+
+//Looks for the current section that is displayed in the main window and changes class to hide
+let activeClass = document.querySelectorAll(".display");
+let activeClassId = activeClass[0].id;
+
+//document.getElementById(navElement).innerHTML = "Clicked link: " + navElement + ". The active class: " + activeClass[0].id + ". How do I change the classes in the active class: " + activeClass[0].id + " activeClassId: " + activeClassId + ". The new active class will be: " + navElement;
+
+activeClass[0].classList.remove("display");
+activeClass[0].classList.add("hide");
+
+
+
+document.getElementById(navElement).classList.add("display");
+document.getElementById(navElement).classList.remove("hide");
+
+}
+
+/* Event Listeners */
+document.getElementById("homeLink").addEventListener("click", changeClass);
+document.getElementById("servicesLink").addEventListener("click", changeClass);
+document.getElementById("aboutLink").addEventListener("click", changeClass);
+document.getElementById("reviewsLink").addEventListener("click", changeClass);
+document.getElementById("contactLink").addEventListener("click", changeClass);
+
+

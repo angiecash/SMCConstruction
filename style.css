@@ -1,0 +1,429 @@
+/* #region CSS RESET (Used for folding code) */
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* #endregion  CSS Reset*/
+
+/* #region || General Styles */
+:root {
+    /*Colors*/
+    --white: #F7F7FF;
+    --black: #050517; 
+    --red: #D20537;
+    --gray: #2D373C;
+    --brown: #9C6832;
+
+    /*Light Mode Colors*/
+    --ltgray: #e8eaec;
+    --lttext: #0F191F;
+    --ltprimary: #93b7cc;
+    --ltbg: #f0f6fa;
+    --lttertiary: #f1a852;
+    
+    /*Dark Mode Colors*/
+    --dktext: #DFEAF0;
+    --dksecondary: #1c6694;
+    --dkprimary: #33566c;
+    --dkbg: #050b0e;
+    --dkorange: #af640e;
+    --dkgray: #c2ccd1;
+}
+html {
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    box-sizing: border-box;
+    color: var(--lttext);
+}
+body {
+    background-color: var(--ltbg);
+    width: 1280px;
+    height: 1024px;
+    margin: 0 auto;
+}
+h2, h3 {
+    font-size: 16px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+footer {
+    display: block;
+    height: 125px;
+    text-align: center;
+    background-color: var(--dkbg);
+    color: var(--dktext);
+    padding-top: 20px;
+}
+/* #endregion || General Styles */
+
+/* #region || Header and Main Navigation */
+header {
+    height: 350px;
+}
+.heroImage {
+   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/kitchenheader.jpg");
+   height: 90%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+}
+.heroText h1 {
+   /*font-family: "Black Ops One", system-ui;*/
+   font-family: "Fugaz One", sans serif;
+   text-align: center;
+   position: relative;
+   color: var(--ltgray);
+   font-size:100px;
+   top: 100px;
+   text-transform: uppercase;
+   
+   text-shadow: 2px 2px 0 var(--black), 2px -2px 0 var(--black), -2px 2px 0 orange, -2px -2px 0 var(--black);
+   
+   letter-spacing: 4px;
+}
+header button {
+    position: relative;
+    z-index: 1;
+    top: -5px;
+    left: 1200px;
+    border: none;
+    padding: 0;
+}
+#clickDark {
+    visibility: hidden;
+}
+nav {
+    background-color: orange;
+    width: 1280px;
+    position: absolute;
+    top: 310px;
+    height: 55px;
+}
+nav ul {
+    overflow: visible;
+    position: relative;
+    top: -10px;
+    left: 100px; 
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px;
+}
+nav h2 {
+    visibility: hidden;
+    height: 0px;
+    margin: 0px;
+}
+nav li {
+    text-align: center;
+    text-transform: uppercase;
+}
+nav li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+/*
+    background-color: var(--ltgray);
+    border-radius: 50% 50% 0% 0%;
+    border: solid 2px var(--black);
+*/
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--lttext);
+}
+.active {
+    background-color: var(--ltprimary);
+    color: var(--lttext);
+    border-bottom: none;
+}
+nav a:hover {
+    color: var(--lttext);
+}
+/*
+nav a:visited {
+    color: #ffffff;
+} 
+*/
+
+/* #endregion || Header and Main Navigation */
+
+/* #region || Main Section */
+.display {
+    display: block;
+}
+.hide {
+    display: none;
+}
+/*
+section {
+    border-radius: 3% 3% 0 0;
+    border: solid 2px var(--black);
+}
+*/
+main section {
+    height: 700px;
+    padding: 20px;
+    /*order: solid 2px var(--black);*/
+    background-color: var(--ltprimary);
+
+}
+/* #endregion || Main Section */
+
+/* #region || Gallery */
+#details {
+   margin: 0 auto;
+   width: 100%
+}
+.activeGallery {
+   width: 1200px;
+   height: 650px;
+   overflow: auto;
+}
+.galleryHide {
+    display: none;
+}
+#services img:hover {
+   filter: grayscale(0);
+   border: solid 2px orange;
+}
+.gridContainer {
+    columns: 4 100px;
+    width: 85%;
+    margin: 0 auto;
+}
+.gridContainer div {
+   width: 200px;
+   margin: 10px 10px 10px 10px;
+   display: inline-block;
+   border: solid 2px var(--dktext);
+   box-shadow: 7px 7px 7px rgba(0,0,0,0.5);
+   border-radius: 5px;
+   transition: all .5s ease-in-out;
+}
+.firstDiv {
+   background-color: var(--ltbg);
+   font-size: 18px;
+   color: var(--lttext);
+}
+.gridContainer img {
+    width: 175px;
+    border: solid 2px var(--dktext);
+    margin: 5px;
+    padding: 5px;
+    filter: grayscale(100%);
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.gridContainer div h2, .gridContainer div h3, .gridContainer div p {
+   margin: 20px;
+   padding: 0;
+   text-align: center;
+}
+/* #endregion || Gallery */
+
+/* #region || Contact */
+#contactPage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+#contactPage h2 {
+    display: none;
+}
+form {
+    width: 550px;
+    height: 700px;
+    box-sizing: border-box;
+    padding: 10px;
+    color: var(--lttext);
+    border-radius: 10px;
+    background-color: var(--ltgray);
+    border-top: solid 8px orange;
+    border-bottom: solid 8px orange;
+    border-left: solid 3px orange;
+    border-right: solid 3px orange;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+#contactMessage  {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#contactConfirm {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 0 auto;
+}
+#fullName, #phone, #email { 
+    width: 90%;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+input {
+    border-radius: 10px;
+}
+textarea {
+    width: 90%;
+    height: 100px;
+    border-radius: 10px;
+    resize: none;
+}
+.labels {
+    margin-left: 15px;
+    margin-top: 5px;
+}
+#guessNumber {
+    height: 30px;
+}
+fieldset {
+    width: 87%;
+    padding: 10px 0 10px 10px;
+    border: solid 2px var(--dkgray);
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+legend {
+    padding-left: 5px;
+}
+.required {
+   color: var(--dkorange);
+   font-size: 14px;
+}
+.radioHide {
+    display: none;
+}
+#mySubmit {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--black);
+    background-color: orange;
+    margin-top: 10px;
+    padding: 10px 10px;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: solid 1px var(--ltgray);
+}
+/*
+#mySubmit:focus {
+	outline: 3px solid var(--red);
+}
+    */
+#mySubmit:hover {
+    background-color: var(--dkorange);
+    border: solid 3px;
+} 
+.errorMessage {
+    display: none;
+    color: var(--red);
+    font-weight: bold;
+    margin: 0.2em 0;
+}
+.error {
+    display: block;
+}
+.inputError {
+    border: 2px solid var(--red);
+}
+/* #endregion || Contact */
+
+/* #region || Dark Mode Styles */
+.darkMode {
+    background-color: var(--dkbg);
+    color: var(--dktext);
+}
+.darkMode .heroText h1 {
+    color: var(--dkbg);
+    text-shadow: 2px 2px 0 var(--dktext), 2px -2px 0 var(--dktext), -2px 2px 0 orange, -2px -2px 0 var(--dktext);
+}
+.darkMode nav {
+    background-color: orange;
+}
+/*
+.darkMode nav li a {
+    background-color: var(--dkgray);
+    color: var(--dktext);
+}
+*/
+.darkMode .active {
+    background-color: var(--dkprimary);
+    color: var(--dktext);
+}
+.darkMode main section {
+    background-color: var(--dkprimary);
+}
+.darkMode .firstDiv {
+   color: var(--dktext);
+   background-color: var(--dkbg);
+}
+.darkMode form {
+    color: black;
+    background-color: var(--ltgray);
+    border-top: solid 8px var(--dkorange);
+    border-bottom: solid 8px var(--dkorange);
+    border-left: solid 3px var(--dkorange);
+    border-right: solid 3px var(--dkorange);
+}
+/*
+.darkMode input {
+
+}
+.darkMode textarea {
+
+}
+*/
+.darkMode #mySubmit {
+    background-color: var(--dkorange);
+}
+.darkMode svg {
+    background-color: var(--dkbg);
+    fill: var(--dktext);
+}
+/* #endregion || Dark Mode Styles */

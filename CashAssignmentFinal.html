@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Fugaz+One&display=swap" rel="stylesheet">
+    <title>SMC Construction</title>
+</head>
+
+<body>
+    <header>
+	<div class="heroImage">
+		<div class="heroText">
+     	 		<h1>SMC Construction</h1>
+		</div>
+	</div>
+
+        <button type="button" class="toggleTheme" id="toggleTheme"><svg width="50" id="lni_lni-night" x="0px" y="0px" viewBox="0 0 64 64"><!-- style="enable-background:new 0 0 62 62;" xml:space="preserve"-->
+       <path id="clickDark" d="M35.5,4c-1.7-0.5-3.4-0.9-5.2-1.2c-1.3-0.2-2.7,0.5-3.2,1.7c-0.6,1.2-0.3,2.7,0.7,3.5c7.1,6.6,9.7,16.3,6.8,25.4
+           c-3.2,10.1-12.6,17.2-23.5,17.5c-1.4,0-2.5,0.9-2.9,2.2c-0.4,1.3,0.2,2.7,1.3,3.4c2.5,1.5,5,2.7,7.5,3.5c2.9,0.9,5.9,1.3,8.9,1.3
+           c5.1,0,10.1-1.3,14.6-3.8c7.1-3.9,12.1-10.2,14.3-17.8C59.1,24.7,50.6,9,35.5,4z M50.5,38.4c-1.8,6.5-6.2,11.8-12.1,15.1
+           c-6.2,3.4-13.3,4.1-20,2.1c-0.7-0.2-1.5-0.5-2.2-0.8c10.6-2.1,19.4-9.7,22.7-20.1c2.9-9.2,1.1-18.9-4.8-26.5c0,0,0,0,0,0
+           C46.9,12.5,54.1,25.8,50.5,38.4z"/>
+           <g id="lightMode">
+            <path d="M32,18.4c-7.5,0-13.6,6.1-13.6,13.6c0,7.5,6.1,13.6,13.6,13.6c7.5,0,13.6-6.1,13.6-13.6C45.6,24.5,39.5,18.4,32,18.4z
+                 M32,41.1c-5,0-9.1-4.1-9.1-9.1c0-5,4.1-9.1,9.1-9.1c5,0,9.1,4.1,9.1,9.1C41.1,37,37,41.1,32,41.1z"/>
+            <path d="M32,11.3c1.2,0,2.3-1,2.3-2.3V4c0-1.2-1-2.3-2.3-2.3c-1.2,0-2.3,1-2.3,2.3v5.1C29.8,10.3,30.8,11.3,32,11.3z"/>
+            <path d="M32,52.7c-1.2,0-2.3,1-2.3,2.3V60c0,1.2,1,2.3,2.3,2.3c1.2,0,2.3-1,2.3-2.3v-5.1C34.3,53.7,33.2,52.7,32,52.7z"/>
+            <path d="M48.3,18c0.6,0,1.2-0.2,1.6-0.7l3.2-3.2c0.9-0.9,0.9-2.3,0-3.2c-0.9-0.9-2.3-0.9-3.2,0l-3.2,3.2c-0.9,0.9-0.9,2.3,0,3.2
+                C47.1,17.8,47.7,18,48.3,18z"/>
+            <path d="M14.2,46.7L11,49.8c-0.9,0.9-0.9,2.3,0,3.2c0.4,0.4,1,0.7,1.6,0.7s1.2-0.2,1.6-0.7l3.2-3.2c0.9-0.9,0.9-2.3,0-3.2
+                C16.5,45.8,15,45.8,14.2,46.7z"/>
+            <path d="M60,29.8h-5.1c-1.2,0-2.3,1-2.3,2.3c0,1.2,1,2.3,2.3,2.3H60c1.2,0,2.3-1,2.3-2.3C62.3,30.8,61.2,29.8,60,29.8z"/>
+            <path d="M11.3,32c0-1.2-1-2.3-2.3-2.3H4c-1.2,0-2.3,1-2.3,2.3c0,1.2,1,2.3,2.3,2.3h5.1C10.3,34.3,11.3,33.2,11.3,32z"/>
+            <path d="M49.8,46.7c-0.9-0.9-2.3-0.9-3.2,0c-0.9,0.9-0.9,2.3,0,3.2l3.2,3.2c0.4,0.4,1,0.7,1.6,0.7s1.2-0.2,1.6-0.7
+                c0.9-0.9,0.9-2.3,0-3.2L49.8,46.7z"/>
+            <path d="M14.2,11c-0.9-0.9-2.3-0.9-3.2,0c-0.9,0.9-0.9,2.3,0,3.2l3.2,3.2c0.4,0.4,1,0.7,1.6,0.7c0.6,0,1.2-0.2,1.6-0.7
+                c0.9-0.9,0.9-2.3,0-3.2L14.2,11z"/>
+        </g>
+       </svg>
+        </button>
+    </header>
+
+    <nav>
+        <h2>Main Navigation</h2>
+        <ul>
+            <li><a href="#" id="homeLink" class="active">Home</a></li>
+            <li><a href="#" id="servicesLink">Services</a></li>
+            <li><a href="#" id="aboutLink">About</a></li>
+            <li><a href="#" id="contactLink">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home" class="display">
+            <h2>Home</h2>
+	    <p>Guess the number and win!</p>
+            <p> </p>
+            <p>A random number will be generated and if your number matches, you win!</p>
+            <div class="gameForm">
+            <label for="guessNumber">Enter a number between 1 and 10:</label>
+            <input type="text" id="guessNumber" class="guessNumber">
+            <input type="submit" value="Take a guess!" class="submitGuess" id="submitNumber">
+            </div>
+        </section>
+
+        <section id="services" class="hide">
+            
+            <div id="servicesGallery" class="activeGallery">
+		<div class="gridContainer">
+		<div class="firstDiv"><h2>Services</h2>
+		<p class="details">The following services are available. Please click on an image to see past work.</p></div>
+	        <div><a href="#" id="kitchen"><img src="images/backsplash2.jpg" alt="remodeled kitchen" height="230"><p>KITCHEN</p></a></div>
+                <div><a href="#" id="bathroom"><img src="images/bathroom8.jpeg" alt="Pair of bathroom cabinets with sinks" width="200"><p>BATHROOM</p></a></div>
+                <div><a href="#" id="exterior"><img src="images/porch1after.jpg" alt="White front door of a home with freshly installed stone on the walls" height="230"><p>EXTERIOR</p></a></div>
+                <div><a href="#" id="floor"><img src="images/livingroom2after.jpg" alt="Kitchen and living room with newly laid vinyl flooring" width="200"><p>FLOORING</p></a></div>
+                <div><a href="#" id="custom"><img src="images/fireplace1after.jpg" alt="Fireplace with red brick and mirror above it" height="230"><p>CUSTOM WORK</p></a></div>
+		</div>
+            </div>
+
+            <div id="kitchenGallery" class="galleryHide">
+                <div class="gridContainer">
+			<div class="firstDiv"><h3>KITCHEN</h3>
+			<p class="details">kitchen remodel information</p></div>
+	                <div><img class="gridItem" src="images/kitchen1before.jpg" alt=""><p>Text</p></div>
+	                <div><img class="gridItem" src="images/kitchen1.jpg" alt="" ><p>Text</p></div>
+	                <div><img class="gridItem" src="images/kitchen1a.jpg" alt=""><p>Text</p></div>
+	                <div><img class="gridItem" src="images/kitchen2.jpg" alt=""><p>Text</p></div>
+	                <div><img class="gridItem" src="images/backsplash1.jpg" alt=""><p>Text</p></div>
+        	        <div><img class="gridItem" src="images/backsplash2.jpg" alt=""><p>Text</p></div>
+	                <div><img class="gridItem" src="images/backsplash3.jpg" alt=""><p>Text</p></div>
+                	<div><img class="gridItem" src="images/backsplash4.jpg" alt=""><p>Text</p></div>
+		</div>
+            </div>
+            
+            <div id="bathroomGallery" class="galleryHide">
+	    <div class="gridContainer">
+                <div class="firstDiv"><h3>BATHROOM</h3>
+		<p class="details">Remodeling includes backsplash, vanity, mirrors, drywall, tiling, etc.</p></div>
+                <div><img src="images/bathroom.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/bathroom1before.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/bathroom2after.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/bathroom2before.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/bathroom2after.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/bathroom3after.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/bathroom4before.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/bathroom4after.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/bathroom5after.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/bathroom6after.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/bathroom7before.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/bathroom7after1.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/bathroom7after2.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/bathroom8.jpeg" alt=""><p>Text</p></div>
+                <div><img src="images/bathroomMirrors.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/vanity1before.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/vanity1after.jpg" alt=""><p>Text</p></div>
+            </div>
+            </div>
+
+            <div id="exteriorGallery" class="galleryHide">
+	    <div class="gridContainer">
+		<div class="firstDiv"><h3>EXTERIOR</h3>
+                <p class="details">EXTERIOR</p></div>
+                <div><img src="images/Exterior1before.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/Exterior1.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/Exterior2.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/Exterior3.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/Exterior4.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/house2before.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/house2after.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/porch1before.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/porch1after.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/StairsBefore.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/Stairs.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/window1before.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/window1after.jpg" alt=""><p>Text</p></div>
+            </div>
+            </div>
+
+            <div id="floorGallery" class="galleryHide">
+	    <div class="gridContainer">
+		<div class="firstDiv"><h3>FLOORING</h3>
+		<p class="details">Flooring details</p><br></div>
+                <div><img src="images/house1before.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/house1after.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/livingroom1before.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/livingroom2after.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/lvp.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/LVP2.jpeg" alt=""><p>Text</p></div>
+            </div>
+            </div>
+
+            <div id="customGallery" class="galleryHide">
+	    <div class="gridContainer">
+		<div class="firstDiv"><h3>CUSTOM</h3>
+ 		<p class="details">Custom details</p></div>
+                <div><img src="images/customshudders1.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/customshudders2.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/customshudders3.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/customTilework.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/fireplace1before.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/fireplace1after.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/fireplace2before.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/fireplace2after.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/fireplace3before.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/fireplace3after.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/planterboxes.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/shelveshangers.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/window1before.jpg" alt=""><p>Text</p></div>
+                <div><img src="images/window1after.jpg" alt=""><p>Text</p></div>
+            </div>
+            </div>
+            <a href="#" id="returnToMain">Return to Services</a>
+        </section>
+        
+        <section id="about" class="hide">
+            <h2>About</h2>
+	        <p>This will be the about page</p>
+        </section>
+        
+        <section id="contact" class="hide">
+            <div id="contactPage">
+                <h2>Contact</h2>
+			    <form>
+                    <label for="fullName" class="labels">FULL NAME<span class="required">*</span></label><br>
+                    <span class="errorMessage">Please enter your full name.</span>
+                    <input type="text" id="fullName" name="fullName">
+                    <br>
+                    <label for="phone" class="labels">PHONE NUMBER<span id="phoneRequire" class="required">*</span></label><br>
+                    <span class="errorMessage">Please enter a valid phone number.</span>
+                    <input type="text" id="phone" name="phone">
+                    <br>
+                    <label for="email" class="labels">E-MAIL ADDRESS<span id="emailRequire" class="required radioHide">*</span></label><br>
+                    <span class="errorMessage">Please enter a valid e-mail address.</span>
+                    <input type="email" id="email" name="email">
+                    <br>
+                    <fieldset>
+                        <legend>HOW DO YOU WISH TO BE CONTACTED?</legend>
+                        <label for="phonePref" class="radio">PHONE</label>
+                        <input type="radio" id="phonePref" name="contactPref" value="phone" checked>
+
+                        <label for="emailPref" class="radio">E-MAIL</label>
+                        <input type="radio" id="emailPref" name="contactPref" value="email">
+                    </fieldset>
+
+                    <label for="comments" class="labels">COMMENTS/QUESTIONS<span class="required">*</span></label>
+                    <span class="errorMessage">Please enter your quesitons or comments.</span>
+                    <br>
+                    <textarea id="comments" name="comments"></textarea>
+                    <br>
+                    <input type="submit" name="mySubmit" value="Submit" id="mySubmit">
+    		    </form>
+
+                <p id="contactMessage">Text about the form to the left and why they should fill it out.</p>
+                <p id="contactConfirm"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <small>Copyright 2024 SMC Construction, LLC</small>
+    </footer>
+
+</body>
+</html>
