@@ -49,20 +49,22 @@ table {
 /* #region || General Styles */
 :root {
     /*Light Mode Colors*/
-    --ltbg: #959797; 
+    --ltbg: #d7d7d7; 
     --orange: #ff9500;
     --ltsec: #017979;
     --lttext: #020d0b;
     --red: #ff1414;
     --ltprimary: #93b7cc;
+    --ltaccent: #f8a354;
 
     /*Dark Mode Colors*/
     --dkbg: #686a6a;
-    --dkorange: #ff9500;
-    --dksec: #86fefe;
+    --dkorange: #ffb957;
+    --dksec: #a5cdcd;
     --dktext: #f2fdfb;
     --dkred: #eb0000;
     --dkgray: #c2ccd1;
+    --dkaccent: #ab5707;
 
     /*Colors*/
     --black: #050517; 
@@ -74,6 +76,7 @@ html {
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     box-sizing: border-box;
     color: var(--lttext);
+    background-color: var(--lttext);
 }
 body {
     background-color: var(--ltbg);
@@ -86,12 +89,23 @@ h2, h3 {
     padding-bottom: 10px;
     text-transform: uppercase;
 }
+a {
+    text-decoration: none;
+    color: var(--lttext);
+    font-size: 20px;
+}
+div {
+    color: var(--lttext);
+    size: 18px;
+}
+a:hover, div:hover {
+    color: var(--dktext);
+}
 footer {
     display: block;
     height: 125px;
     text-align: center;
-    background-color: var(--ltbg);
-    color: var(--dktext);
+    background-color: var(--orange);
     padding-top: 20px;
 }
 /* #endregion || General Styles */
@@ -131,7 +145,7 @@ header button {
     visibility: hidden;
 }
 nav {
-    background-color: var(--ltbg);
+    background-color: var(--orange);
     width: 1280px;
     position: absolute;
     top: 311px;
@@ -163,15 +177,14 @@ nav li a {
     color: var(--lttext);
 }
 .active {
-    /*background-color: var(--ltprimary);*/
-    color: orange;
+    color: var(--dktext);
     border-bottom: none;
     font-size: 25px;
     padding: 17px;
 }
 /*
 nav a:hover {
-    color: var(--lttext);
+    color: var(--dksec);
 }
 */
 /*
@@ -191,7 +204,7 @@ nav a:visited {
 main section {
     height: 700px;
     padding: 20px;
-    background-color: var(--gray);
+    background-color: var(--ltbg);
 }
 /* #endregion || Main Section */
 
@@ -209,31 +222,37 @@ main section {
 .galleryHide {
     display: none;
 }
+#services .gridContainer div:hover {
+    background-color: var(--ltsec);
+    
+}
 #services img:hover {
    filter: grayscale(0);
-   border: solid 2px var(--orange);
+   /*border: solid 2px var(--orange);*/
 }
 .gridContainer {
-    columns: 4 150px;
+    columns: 3 300px;
     width: 85%;
     margin: 0 auto;
 }
+
 .gridContainer div {
-   width: 225px;
+   width: 325px;
    margin: 10px;
    display: inline-block;
    border: solid 2px var(--dktext);
+   background-color: var(--dksec);
    box-shadow: 7px 7px 7px rgba(0,0,0,0.5);
    border-radius: 5px;
    transition: all .3s ease-in-out;
 }
-.firstDiv {
-   background-color: var(--ltbg);
-   font-size: 18px;
-   color: var(--lttext);
-}
+.gridcontainer .firstDiv {
+    background-color: var(--dksec);
+    font-size: 18px;
+    color: var(--lttext);
+ }
 .gridContainer img {
-    width: 200px;
+    width: 300px;
     border: solid 2px var(--dktext);
     margin: 5px;
     padding: 5px;
@@ -246,6 +265,11 @@ main section {
    margin: 20px;
    padding: 0;
    text-align: center;
+}
+.returnToMain {
+    margin: 0 auto;
+    padding: 10px;
+
 }
 /* #endregion || Gallery */
 
@@ -266,10 +290,10 @@ form {
     color: var(--lttext);
     border-radius: 10px;
     background-color: var(--ltbg);
-    border-top: solid 8px orange;
-    border-bottom: solid 8px orange;
-    border-left: solid 3px orange;
-    border-right: solid 3px orange;
+    border-top: solid 8px var(--ltsec);
+    border-bottom: solid 8px var(--ltsec);
+    border-left: solid 3px var(--ltsec);
+    border-right: solid 3px var(--ltsec);
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -321,8 +345,8 @@ legend {
     padding-left: 5px;
 }
 .required {
-   color: var(--dkorange);
-   font-size: 14px;
+   color: var(--red);
+   font-size: 18px;
 }
 .radioHide {
     display: none;
@@ -339,11 +363,6 @@ legend {
     border-radius: 10px;
     border: solid 1px var(--ltgray);
 }
-/*
-#mySubmit:focus {
-	outline: 3px solid var(--red);
-}
-    */
 #mySubmit:hover {
     background-color: var(--dkorange);
     border: solid 3px;
@@ -368,28 +387,21 @@ legend {
     color: var(--dktext);
 }
 .darkMode .heroText h1 {
-    color: var(--dkbg);
-    text-shadow: 2px 2px 0 var(--dktext), 2px -2px 0 var(--dktext), -2px 2px 0 orange, -2px -2px 0 var(--dktext);
+    color: var(--ltbg);
+    /*text-shadow: 2px 2px 0 var(--dktext), 2px -2px 0 var(--dktext), -2px 2px 0 orange, -2px -2px 0 var(--dktext);*/
 }
 .darkMode nav {
-    background-color: orange;
+    background-color: var(--dkorange);
 }
-/*
-.darkMode nav li a {
-    background-color: var(--dkgray);
-    color: var(--dktext);
-}
-*/
 .darkMode .active {
-    background-color: var(--dkgray);
     color: var(--dktext);
 }
 .darkMode main section {
-    background-color: var(--dkgray);
+    background-color: var(--dkbg);
 }
 .darkMode .firstDiv {
    color: var(--dktext);
-   background-color: var(--dkbg);
+   background-color: var(--ltsec);
 }
 .darkMode form {
     color: black;
@@ -399,19 +411,15 @@ legend {
     border-left: solid 3px var(--dkorange);
     border-right: solid 3px var(--dkorange);
 }
-/*
-.darkMode input {
-
-}
-.darkMode textarea {
-
-}
-*/
 .darkMode #mySubmit {
     background-color: var(--dkorange);
+    color: var(--lttext);
 }
 .darkMode svg {
     background-color: var(--dkbg);
     fill: var(--dktext);
+}
+.darkMode footer {
+    background-color: var(--dkorange);
 }
 /* #endregion || Dark Mode Styles */
