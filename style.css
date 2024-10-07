@@ -54,6 +54,7 @@ table {
     --ltsec: #017979;
     --lttext: #020d0b;
     --red: #ff1414;
+    --ltprimary: #93b7cc;
 
     /*Dark Mode Colors*/
     --dkbg: #686a6a;
@@ -61,27 +62,13 @@ table {
     --dksec: #86fefe;
     --dktext: #f2fdfb;
     --dkred: #eb0000;
-    
+    --dkgray: #c2ccd1;
+
     /*Colors*/
     --black: #050517; 
     --gray: #2D373C;
     --brown: #9C6832;
     --ltgray: #e8eaec;
-
-
-    /*Light Mode Colors*/
-
-    --ltprimary: #93b7cc;
-    
-    --lttertiary: #f1a852;
-    
-    /*Dark Mode Colors*/
-    --dktext: #DFEAF0;
-    --dksecondary: #1c6694;
-    --dkprimary: #33566c;
-    --dkbg: #050b0e;
-    --dkorange: #af640e;
-    --dkgray: #c2ccd1;
 }
 html {
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
@@ -394,11 +381,11 @@ legend {
 }
 */
 .darkMode .active {
-    background-color: var(--dkprimary);
+    background-color: var(--dkgray);
     color: var(--dktext);
 }
 .darkMode main section {
-    background-color: var(--dkprimary);
+    background-color: var(--dkgray);
 }
 .darkMode .firstDiv {
    color: var(--dktext);
