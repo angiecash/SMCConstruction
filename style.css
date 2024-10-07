@@ -76,7 +76,7 @@ html {
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     box-sizing: border-box;
     color: var(--lttext);
-    background-color: var(--lttext);
+    background-color: var(--black);
 }
 body {
     background-color: var(--ltbg);
@@ -97,9 +97,9 @@ a {
 }
 div {
     color: var(--lttext);
-    size: 18px;
+    font-size: 18px;
 }
-a:hover, div:hover {
+a:hover, #services div:hover {
     color: var(--dktext);
 }
 footer {
@@ -378,7 +378,7 @@ legend {
 
 /* #region || Dark Mode Styles */
 .darkMode {
-    background-color: var(--dkbg);
+    background-color: var(--lttext);
     color: var(--dktext);
 }
 .darkMode .heroText h1 {
