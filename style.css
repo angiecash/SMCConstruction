@@ -48,18 +48,31 @@ table {
 
 /* #region || General Styles */
 :root {
+    /*Light Mode Colors*/
+    --ltbg: #959797; 
+    --orange: #ff9500;
+    --ltsec: #017979;
+    --lttext: #020d0b;
+    --red: #ff1414;
+
+    /*Dark Mode Colors*/
+    --dkbg: #686a6a;
+    --dkorange: #ff9500;
+    --dksec: #86fefe;
+    --dktext: #f2fdfb;
+    --dkred: #eb0000;
+    
     /*Colors*/
-    --white: #F7F7FF;
     --black: #050517; 
-    --red: #D20537;
     --gray: #2D373C;
     --brown: #9C6832;
+    --ltgray: #e8eaec;
+
 
     /*Light Mode Colors*/
-    --ltgray: #e8eaec;
-    --lttext: #0F191F;
+
     --ltprimary: #93b7cc;
-    --ltbg: #f0f6fa;
+    
     --lttertiary: #f1a852;
     
     /*Dark Mode Colors*/
@@ -90,7 +103,7 @@ footer {
     display: block;
     height: 125px;
     text-align: center;
-    background-color: var(--dkbg);
+    background-color: var(--ltbg);
     color: var(--dktext);
     padding-top: 20px;
 }
@@ -109,7 +122,6 @@ header {
    position: relative;
 }
 .heroText h1 {
-   /*font-family: "Black Ops One", system-ui;*/
    font-family: "Fugaz One", sans serif;
    text-align: center;
    position: relative;
@@ -117,9 +129,7 @@ header {
    font-size:100px;
    top: 100px;
    text-transform: uppercase;
-   
    text-shadow: 2px 2px 0 var(--black), 2px -2px 0 var(--black), -2px 2px 0 orange, -2px -2px 0 var(--black);
-   
    letter-spacing: 4px;
 }
 header button {
@@ -134,10 +144,10 @@ header button {
     visibility: hidden;
 }
 nav {
-    background-color: orange;
+    background-color: var(--ltbg);
     width: 1280px;
     position: absolute;
-    top: 310px;
+    top: 311px;
     height: 55px;
 }
 nav ul {
@@ -161,29 +171,27 @@ nav li a {
     display: block;
     padding: 20px;
     text-decoration: none;
-/*
-    background-color: var(--ltgray);
-    border-radius: 50% 50% 0% 0%;
-    border: solid 2px var(--black);
-*/
     font-size: 1.2em;
     font-weight: bold;
     color: var(--lttext);
 }
 .active {
-    background-color: var(--ltprimary);
-    color: var(--lttext);
+    /*background-color: var(--ltprimary);*/
+    color: orange;
     border-bottom: none;
+    font-size: 25px;
+    padding: 17px;
 }
+/*
 nav a:hover {
     color: var(--lttext);
 }
+*/
 /*
 nav a:visited {
     color: #ffffff;
 } 
 */
-
 /* #endregion || Header and Main Navigation */
 
 /* #region || Main Section */
@@ -193,18 +201,10 @@ nav a:visited {
 .hide {
     display: none;
 }
-/*
-section {
-    border-radius: 3% 3% 0 0;
-    border: solid 2px var(--black);
-}
-*/
 main section {
     height: 700px;
     padding: 20px;
-    /*order: solid 2px var(--black);*/
-    background-color: var(--ltprimary);
-
+    background-color: var(--gray);
 }
 /* #endregion || Main Section */
 
@@ -217,27 +217,28 @@ main section {
    width: 1200px;
    height: 650px;
    overflow: auto;
+   box-shadow: inset 7px -7px 7px rgba(0,0,0,0.5);
 }
 .galleryHide {
     display: none;
 }
 #services img:hover {
    filter: grayscale(0);
-   border: solid 2px orange;
+   border: solid 2px var(--orange);
 }
 .gridContainer {
-    columns: 4 100px;
+    columns: 4 150px;
     width: 85%;
     margin: 0 auto;
 }
 .gridContainer div {
-   width: 200px;
-   margin: 10px 10px 10px 10px;
+   width: 225px;
+   margin: 10px;
    display: inline-block;
    border: solid 2px var(--dktext);
    box-shadow: 7px 7px 7px rgba(0,0,0,0.5);
    border-radius: 5px;
-   transition: all .5s ease-in-out;
+   transition: all .3s ease-in-out;
 }
 .firstDiv {
    background-color: var(--ltbg);
@@ -245,13 +246,13 @@ main section {
    color: var(--lttext);
 }
 .gridContainer img {
-    width: 175px;
+    width: 200px;
     border: solid 2px var(--dktext);
     margin: 5px;
     padding: 5px;
     filter: grayscale(100%);
     border-radius: 5px;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .gridContainer div h2, .gridContainer div h3, .gridContainer div p {
@@ -277,7 +278,7 @@ form {
     padding: 10px;
     color: var(--lttext);
     border-radius: 10px;
-    background-color: var(--ltgray);
+    background-color: var(--ltbg);
     border-top: solid 8px orange;
     border-bottom: solid 8px orange;
     border-left: solid 3px orange;
@@ -325,7 +326,7 @@ textarea {
 fieldset {
     width: 87%;
     padding: 10px 0 10px 10px;
-    border: solid 2px var(--dkgray);
+    border: solid 2px var(--orange);
     border-radius: 10px;
     margin-bottom: 15px;
 }
