@@ -85,9 +85,10 @@ body {
     margin: 0 auto;
 }
 h2, h3 {
-    font-size: 16px;
+    font-size: 20px;
     padding-bottom: 10px;
     text-transform: uppercase;
+    font-weight: bold;
 }
 a {
     text-decoration: none;
@@ -182,16 +183,6 @@ nav li a {
     font-size: 25px;
     padding: 17px;
 }
-/*
-nav a:hover {
-    color: var(--dksec);
-}
-*/
-/*
-nav a:visited {
-    color: #ffffff;
-} 
-*/
 /* #endregion || Header and Main Navigation */
 
 /* #region || Main Section */
@@ -266,9 +257,13 @@ main section {
    padding: 0;
    text-align: center;
 }
-.returnToMain {
-    margin: 0 auto;
+#returnToMain {
+    position: relative;
+    left: 600px;
     padding: 10px;
+    border: solid 2px var(--ltsec);
+    background-color: var(--dksec);
+    border-radius: 5px;
 
 }
 /* #endregion || Gallery */
@@ -402,6 +397,13 @@ legend {
 .darkMode .firstDiv {
    color: var(--dktext);
    background-color: var(--ltsec);
+}
+.darkMode #returnToMain {
+    color: var(--dktext);
+    background-color: var(--ltsec); 
+}
+.darkMode #returnToMain:hover {
+    border: solid 2px var(--lttext);
 }
 .darkMode form {
     color: black;
