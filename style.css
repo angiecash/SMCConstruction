@@ -99,7 +99,7 @@ div {
     color: var(--lttext);
     font-size: 18px;
 }
-a:hover, #services div:hover {
+a:hover, #services > div:hover {
     color: var(--dktext);
 }
 footer {
