@@ -62,7 +62,7 @@ table {
     --dkorange: #ffb957;
     --dksec: #a5cdcd;
     --dktext: #f2fdfb;
-    --dkred: #eb0000;
+    --dkred: #ac0000;
     --dkgray: #c2ccd1;
     --dkaccent: #ab5707;
 
@@ -406,6 +406,9 @@ legend {
 .darkMode form {
     color: black;
     background-color: var(--dkgray);
+}
+.darkMode .required {
+    color: var(--dkred);
 }
 .darkMode #mySubmit {
     background-color: var(--dkorange);
