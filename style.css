@@ -407,11 +407,11 @@ legend {
 }
 .darkMode form {
     color: black;
-    background-color: var(--ltgray);
-    border-top: solid 8px var(--dkorange);
-    border-bottom: solid 8px var(--dkorange);
-    border-left: solid 3px var(--dkorange);
-    border-right: solid 3px var(--dkorange);
+    background-color: var(--dkgray);
+    border-top: solid 8px var(--dksec);
+    border-bottom: solid 8px var(--dksec);
+    border-left: solid 3px var(--dksec);
+    border-right: solid 3px var(--dksec);
 }
 .darkMode #mySubmit {
     background-color: var(--dkorange);
