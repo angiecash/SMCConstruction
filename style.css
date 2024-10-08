@@ -69,7 +69,6 @@ table {
     /*Colors*/
     --black: #050517; 
     --gray: #2D373C;
-    --brown: #9C6832;
     --ltgray: #e8eaec;
 }
 html {
@@ -127,7 +126,7 @@ header {
    font-family: "Fugaz One", sans serif;
    text-align: center;
    position: relative;
-   color: var(--ltgray);
+   color: var(--dksec);
    font-size:100px;
    top: 100px;
    text-transform: uppercase;
@@ -356,7 +355,7 @@ legend {
     width: 200px;
     height: 50px;
     border-radius: 10px;
-    border: solid 1px var(--ltgray);
+    border: solid 1px var(--ltbg);
 }
 #mySubmit:hover {
     background-color: var(--dkorange);
