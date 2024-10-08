@@ -306,7 +306,7 @@ form {
     margin: 0 auto;
 }
 #fullName, #phone, #email { 
-    width: 90%;
+    width: 97%;
     height: 40px;
     margin-top: 5px;
     margin-bottom: 15px;
@@ -315,7 +315,7 @@ input {
     border-radius: 10px;
 }
 textarea {
-    width: 90%;
+    width: 97%;
     height: 100px;
     border-radius: 10px;
     resize: none;
@@ -328,7 +328,7 @@ textarea {
     height: 30px;
 }
 fieldset {
-    width: 87%;
+    width: 95%;
     padding: 10px 0 10px 10px;
     border: solid 2px var(--orange);
     border-radius: 10px;
@@ -336,6 +336,15 @@ fieldset {
 }
 legend {
     padding-left: 5px;
+}
+.radio, input[type=radio] {
+    position: relative;
+    left: 100px;
+    padding: 0 20px 0 20px;
+}
+input[type=radio] {
+    position: relative;
+    left: 75px; 
 }
 .required {
    color: var(--red);
@@ -351,7 +360,7 @@ legend {
     background-color: orange;
     margin-top: 10px;
     padding: 10px 10px;
-    width: 200px;
+    width: 100%;
     height: 50px;
     border-radius: 10px;
     border: solid 1px var(--ltbg);
