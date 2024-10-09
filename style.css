@@ -112,6 +112,10 @@ footer a {
     position: relative;
     right: -600px;
 }
+footer p {
+    position: relative;
+    top: 95px;
+}
 footer svg {
     height: 35px;
 }
@@ -265,6 +269,12 @@ main section {
    margin: 0 auto;
    width: 100%
 }
+#services h2 {
+    font-size: 50px;
+}
+#services h3 {
+    font-size: 35px;
+}
 .activeGallery {
    width: 1200px;
    height: 750px;
@@ -282,6 +292,9 @@ main section {
     align-items: center;  
     justify-content: center;  
     grid-auto-flow: dense;
+}
+#services div p {
+    font-size: 25px;
 }
 .gridContainer div {
    width: 325px;
@@ -341,13 +354,39 @@ main section {
 
 /* #region || About */
 #about h2 {
+    font-size: 80px;
     grid-column: 1 / 3;
     text-align: center;
+}
+#aboutPage {
+    display: grid;
 }
 #about svg {
     fill: black;
     height: 35px;
     width: 35px;
+}
+#aboutLeft {
+    grid-column-start: 1;
+    width: 600px;
+    margin-left: 25px;
+    line-height: 1.2em;
+    font-size: 20px;
+    padding-top: 15px;
+}
+#aboutRight {
+    grid-column-start: 2;
+    height: 400px;
+    border-radius: 25%;
+    align-self: center;
+    justify-self: center;
+    box-shadow: 8px 8px 0 var(--black), 8px -8px 0 var(--ltred), -8px 8px 0 var(--orange), -8px -8px 0 var(--black);
+}
+#aboutBottom {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    line-height: 1.5em;
+    padding-left: 100px;
 }
 /* #endregion || About */
 
@@ -358,7 +397,7 @@ main section {
     justify-content: center;
 }
 #contactPage h3 {
-    font-size: 30px;
+    font-size: 45px;
 }
 form {
     height: 600px;
@@ -372,7 +411,7 @@ form {
     grid-row-start: 1;
     grid-row-end: 2;
     text-align: center;
-    font-size: 16px;
+    font-size: 25px;
 }
 #contactConfirm {
     font-size: 20px;
@@ -502,6 +541,9 @@ input[type=radio] {
 .darkMode #mySubmit {
     background-color: var(--orange);
     color: var(--lttext);
+}
+.darkMode #aboutBottom svg {
+    fill: var(--dktext);
 }
 .darkMode svg {
     fill: var(--dktext);
