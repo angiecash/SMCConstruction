@@ -303,7 +303,7 @@ main section {
 .gridContainer a {
     color: var(--lttext);
 }
-.gridContainer a:hover {
+.gridContainer a:hover, .gridContainer div:hover {
     color: var(--dktext);
 }
  #services .gridContainer div:not(.firstDiv):hover {
