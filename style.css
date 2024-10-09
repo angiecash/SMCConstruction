@@ -54,8 +54,6 @@ table {
     --ltsec: #017979;
     --lttext: #020d0b;
     --red: #ff1414;
-    --ltprimary: #93b7cc;
-    --ltaccent: #f8a354;
 
     /*Dark Mode Colors*/
     --dkbg: #686a6a;
@@ -64,15 +62,13 @@ table {
     --dktext: #f2fdfb;
     --dkred: #ac0000;
     --dkgray: #c2ccd1;
-    --dkaccent: #ab5707;
 
     /*Colors*/
     --black: #050517; 
     --gray: #2D373C;
-    --ltgray: #e8eaec;
 }
 html {
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: Afacad Flux, Tahoma, sans-serif;
     box-sizing: border-box;
     color: var(--lttext);
     background-color: var(--black);
@@ -97,8 +93,14 @@ a {
 div {
     font-size: 18px;
 }
-a:hover, #services > div:hover {
+a:hover {
     color: var(--dktext);
+}
+p {
+    font-size: 18px;
+}
+strong {
+    font-weight: bold;
 }
 footer {
     display: block;
@@ -191,7 +193,7 @@ nav li a {
     display: none;
 }
 main section {
-    height: 700px;
+    height: 800px;
     padding: 20px;
     background-color: var(--ltbg);
 }
@@ -204,27 +206,27 @@ main section {
 }
 .activeGallery {
    width: 1200px;
-   height: 650px;
+   height: 750px;
    overflow: auto;
    box-shadow: inset 7px -7px 7px rgba(0,0,0,0.5);
 }
 .galleryHide {
     display: none;
 }
-#services .gridContainer div:hover {
+#services .gridContainer div:not(.firstDiv):hover {
     background-color: var(--ltsec);
-    
+    color: var(--dktext);
 }
 #services img:hover {
    filter: grayscale(0);
-   /*border: solid 2px var(--orange);*/
 }
 .gridContainer {
-    columns: 3 300px;
-    width: 85%;
-    margin: 0 auto;
+    display: grid;
+    /*grid-template-columns: repeat(3, 1fr);*/
+    align-items: center;  
+    justify-content: center;  
+    grid-auto-flow: dense;
 }
-
 .gridContainer div {
    width: 325px;
    margin: 10px;
@@ -235,10 +237,12 @@ main section {
    border-radius: 5px;
    transition: all .3s ease-in-out;
 }
-.gridcontainer .firstDiv {
+.gridContainer .firstDiv {
     background-color: var(--dksec);
     font-size: 18px;
+    width: auto;
     color: var(--lttext);
+    grid-column: 1 / 4;
  }
 .gridContainer img {
     width: 300px;
@@ -249,7 +253,6 @@ main section {
     border-radius: 5px;
     transition: all .3s ease-in-out;
 }
-
 .gridContainer div h2, .gridContainer div h3, .gridContainer div p {
    margin: 20px;
    padding: 0;
@@ -257,11 +260,13 @@ main section {
 }
 #returnToMain {
     position: relative;
-    left: 600px;
+    left: 565px;
+    top: 10px;
     padding: 10px;
     border: solid 2px var(--ltsec);
     background-color: var(--dksec);
     border-radius: 5px;
+    margin-top: 10px;
 
 }
 /* #endregion || Gallery */
@@ -269,41 +274,30 @@ main section {
 /* #region || Contact */
 #contactPage {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 100px 100px 300px;
+    justify-content: center;
 }
-#contactPage h2 {
-    display: none;
+#contactPage h3 {
+    font-size: 30px;
 }
 form {
-    width: 550px;
-    height: 700px;
+    height: 600px;
     box-sizing: border-box;
     padding: 10px;
     color: var(--lttext);
     border-radius: 10px;
-    background-color: var(--ltbg);
-    border-top: solid 8px var(--ltsec);
-    border-bottom: solid 8px var(--ltsec);
-    border-left: solid 3px var(--ltsec);
-    border-right: solid 3px var(--ltsec);
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-start: 2;
 }
 #contactMessage  {
-    grid-column-start: 2;
-    grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    text-align: center;
+    font-size: 16px;
 }
 #contactConfirm {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.2em;
+    text-align: center;
 }
 #fullName, #phone, #email { 
     width: 97%;
@@ -330,7 +324,7 @@ textarea {
 fieldset {
     width: 95%;
     padding: 10px 0 10px 10px;
-    border: solid 2px var(--orange);
+    border: solid 2px var(--black);
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -354,16 +348,12 @@ input[type=radio] {
     display: none;
 }
 #mySubmit {
-    font-size: 1.2em;
+    font-size: 20px;
     font-weight: bold;
-    color: var(--black);
-    background-color: orange;
+    background-color: var(--ltsec);
     margin-top: 10px;
-    padding: 10px 10px;
     width: 100%;
     height: 50px;
-    border-radius: 10px;
-    border: solid 1px var(--ltbg);
 }
 #mySubmit:hover {
     background-color: var(--dkorange);

@@ -9,7 +9,7 @@
     <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Fugaz+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Fugaz+One&display=swap" rel="stylesheet">
     <title>SMC Construction</title>
 </head>
 
@@ -58,122 +58,132 @@
     </nav>
     <main>
         <section id="home" class="display">
-            <h2>Home</h2>
-	    <p>Guess the number and win!</p>
-            <p> </p>
-            <p>A random number will be generated and if your number matches, you win!</p>
+            <h2 class="hide">Home</h2>
+	        <p>Guess the number and win!<br>
+            A random number will be generated and if your number matches, you win!</p>
             <div class="gameForm">
-            <label for="guessNumber">Enter a number between 1 and 10:</label>
-            <input type="text" id="guessNumber" class="guessNumber">
-            <input type="submit" value="Take a guess!" class="submitGuess" id="submitNumber">
+                <label for="guessNumber">Enter a number between 1 and 10:</label>
+                <input type="text" id="guessNumber" class="guessNumber">
+                <input type="submit" value="Take a guess!" class="submitGuess" id="submitNumber">
             </div>
         </section>
 
         <section id="services" class="hide">
-            
             <div id="servicesGallery" class="activeGallery">
-		<div class="gridContainer">
-		<div class="firstDiv"><h2>Services</h2>
-		<p class="details">The following services are available. Please click on an image to see past work.</p></div>
-	        <div><a href="#" id="kitchen"><img src="images/backsplash2.jpg" alt="remodeled kitchen" height="230"><p>KITCHEN</p></a></div>
-                <div><a href="#" id="bathroom"><img src="images/bathroom8.jpeg" alt="Pair of bathroom cabinets with sinks" width="200"><p>BATHROOM</p></a></div>
-                <div><a href="#" id="exterior"><img src="images/porch1after.jpg" alt="White front door of a home with freshly installed stone on the walls" height="230"><p>EXTERIOR</p></a></div>
-                <div><a href="#" id="floor"><img src="images/livingroom2after.jpg" alt="Kitchen and living room with newly laid vinyl flooring" width="200"><p>FLOORING</p></a></div>
-                <div><a href="#" id="custom"><img src="images/fireplace1after.jpg" alt="Fireplace with red brick and mirror above it" height="230"><p>CUSTOM WORK</p></a></div>
-		</div>
+                <div class="gridContainer">
+                    <div class="firstDiv">
+                        <h2>Services</h2>
+                        <p class="details">The following services are available. Please click on an image to see past work.</p>
+                    </div>
+                    <div><a href="#" id="kitchen"><p>KITCHEN</p><img src="images/backsplash2.jpg" alt="remodeled kitchen" height="230"></a></div>
+                    <div><a href="#" id="bathroom"><p>BATHROOM</p><img src="images/bathroom8.jpeg" alt="Pair of bathroom cabinets with sinks" width="200"></a></div>
+                    <div><a href="#" id="exterior"><p>EXTERIOR</p><img src="images/porch1after.jpg" alt="White front door of a home with freshly installed stone on the walls" height="230"></a></div>
+                    <div><a href="#" id="floor"><p>FLOORING</p><img src="images/livingroom2after.jpg" alt="Kitchen and living room with newly laid vinyl flooring" width="200"></a></div>
+                    <div><a href="#" id="custom"><p>CUSTOM WORK</p><img src="images/fireplace1after.jpg" alt="Fireplace with red brick and mirror above it" height="230"></a></div>
+                </div>
             </div>
 
             <div id="kitchenGallery" class="galleryHide">
                 <div class="gridContainer">
-			<div class="firstDiv"><h3>KITCHEN</h3>
-			<p class="details">kitchen remodel information</p></div>
-	                <div><img class="gridItem" src="images/kitchen1before.jpg" alt=""><p>Text</p></div>
-	                <div><img class="gridItem" src="images/kitchen1.jpg" alt="" ><p>Text</p></div>
-	                <div><img class="gridItem" src="images/kitchen1a.jpg" alt=""><p>Text</p></div>
-	                <div><img class="gridItem" src="images/kitchen2.jpg" alt=""><p>Text</p></div>
-	                <div><img class="gridItem" src="images/backsplash1.jpg" alt=""><p>Text</p></div>
-        	        <div><img class="gridItem" src="images/backsplash2.jpg" alt=""><p>Text</p></div>
-	                <div><img class="gridItem" src="images/backsplash3.jpg" alt=""><p>Text</p></div>
-                	<div><img class="gridItem" src="images/backsplash4.jpg" alt=""><p>Text</p></div>
-		</div>
+                    <div class="firstDiv">
+                        <h3>KITCHEN</h3>
+                        <p class="details">kitchen remodel information</p>
+                    </div>
+                    <div><img class="gridItem" src="images/kitchen1before.jpg" alt=""><p>Text</p></div>
+                    <div><img class="gridItem" src="images/kitchen1.jpg" alt="" ><p>Text</p></div>
+                    <div><img class="gridItem" src="images/kitchen1a.jpg" alt=""><p>Text</p></div>
+                    <div><img class="gridItem" src="images/kitchen2.jpg" alt=""><p>Text</p></div>
+                    <div><img class="gridItem" src="images/backsplash1.jpg" alt=""><p>Text</p></div>
+                    <div><img class="gridItem" src="images/backsplash2.jpg" alt=""><p>Text</p></div>
+                    <div><img class="gridItem" src="images/backsplash3.jpg" alt=""><p>Text</p></div>
+                    <div><img class="gridItem" src="images/backsplash4.jpg" alt=""><p>Text</p></div>
+                </div>
             </div>
-            
+                
             <div id="bathroomGallery" class="galleryHide">
-	    <div class="gridContainer">
-                <div class="firstDiv"><h3>BATHROOM</h3>
-		<p class="details">Remodeling includes backsplash, vanity, mirrors, drywall, tiling, etc.</p></div>
-                <div><img src="images/bathroom.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/bathroom1before.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/bathroom2after.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/bathroom2before.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/bathroom2after.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/bathroom3after.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/bathroom4before.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/bathroom4after.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/bathroom5after.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/bathroom6after.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/bathroom7before.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/bathroom7after1.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/bathroom7after2.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/bathroom8.jpeg" alt=""><p>Text</p></div>
-                <div><img src="images/bathroomMirrors.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/vanity1before.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/vanity1after.jpg" alt=""><p>Text</p></div>
-            </div>
+                <div class="gridContainer">
+                    <div class="firstDiv">
+                        <h3>BATHROOM</h3>
+                        <p class="details">Remodeling includes backsplash, vanity, mirrors, drywall, tiling, etc.</p>
+                    </div>
+                    <div><img src="images/bathroom.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/bathroom1before.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/bathroom2after.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/bathroom2before.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/bathroom2after.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/bathroom3after.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/bathroom4before.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/bathroom4after.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/bathroom5after.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/bathroom6after.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/bathroom7before.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/bathroom7after1.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/bathroom7after2.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/bathroom8.jpeg" alt=""><p>Text</p></div>
+                    <div><img src="images/bathroomMirrors.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/vanity1before.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/vanity1after.jpg" alt=""><p>Text</p></div>
+                </div>
             </div>
 
             <div id="exteriorGallery" class="galleryHide">
-	    <div class="gridContainer">
-		<div class="firstDiv"><h3>EXTERIOR</h3>
-                <p class="details">EXTERIOR</p></div>
-                <div><img src="images/Exterior1before.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/Exterior1.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/Exterior2.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/Exterior3.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/Exterior4.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/house2before.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/house2after.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/porch1before.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/porch1after.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/StairsBefore.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/Stairs.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/window1before.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/window1after.jpg" alt=""><p>Text</p></div>
-            </div>
+                <div class="gridContainer">
+                    <div class="firstDiv">
+                        <h3>EXTERIOR</h3>
+                        <p class="details">EXTERIOR</p>
+                    </div>
+                    <div><img src="images/Exterior1before.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/Exterior1.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/Exterior2.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/Exterior3.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/Exterior4.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/house2before.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/house2after.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/porch1before.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/porch1after.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/StairsBefore.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/Stairs.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/window1before.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/window1after.jpg" alt=""><p>Text</p></div>
+                </div>
             </div>
 
             <div id="floorGallery" class="galleryHide">
-	    <div class="gridContainer">
-		<div class="firstDiv"><h3>FLOORING</h3>
-		<p class="details">Flooring details</p><br></div>
-                <div><img src="images/house1before.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/house1after.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/livingroom1before.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/livingroom2after.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/lvp.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/LVP2.jpeg" alt=""><p>Text</p></div>
-            </div>
+                <div class="gridContainer">
+                    <div class="firstDiv">
+                        <h3>FLOORING</h3>
+                        <p class="details">Flooring details</p><br>
+                    </div>
+                    <div><img src="images/house1before.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/house1after.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/livingroom1before.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/livingroom2after.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/lvp.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/LVP2.jpeg" alt=""><p>Text</p></div>
+                </div>
             </div>
 
             <div id="customGallery" class="galleryHide">
-	    <div class="gridContainer">
-		<div class="firstDiv"><h3>CUSTOM</h3>
- 		<p class="details">Custom details</p></div>
-                <div><img src="images/customshudders1.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/customshudders2.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/customshudders3.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/customTilework.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/fireplace1before.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/fireplace1after.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/fireplace2before.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/fireplace2after.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/fireplace3before.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/fireplace3after.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/planterboxes.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/shelveshangers.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/window1before.jpg" alt=""><p>Text</p></div>
-                <div><img src="images/window1after.jpg" alt=""><p>Text</p></div>
-            </div>
+                <div class="gridContainer">
+                    <div class="firstDiv">
+                        <h3>CUSTOM</h3>
+                        <p class="details">Custom details</p>
+                    </div>
+                    <div><img src="images/customshudders1.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/customshudders2.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/customshudders3.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/customTilework.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/fireplace1before.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/fireplace1after.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/fireplace2before.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/fireplace2after.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/fireplace3before.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/fireplace3after.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/planterboxes.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/shelveshangers.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/window1before.jpg" alt=""><p>Text</p></div>
+                    <div><img src="images/window1after.jpg" alt=""><p>Text</p></div>
+                </div>
             </div>
             <br>
             <a href="#" id="returnToMain">SERVICES</a>
@@ -186,20 +196,20 @@
         
         <section id="contact" class="hide">
             <div id="contactPage">
-                <h2>Contact</h2>
+                <h2 class="hide">Contact</h2>
 			    <form>
                     <label for="fullName" class="labels">FULL NAME<span class="required">*</span></label><br>
                     <span class="errorMessage">Please enter your full name.</span>
                     <input type="text" id="fullName" name="fullName">
-                    <br>
+                
                     <label for="phone" class="labels">PHONE NUMBER<span id="phoneRequire" class="required">*</span></label><br>
                     <span class="errorMessage">Please enter a valid phone number.</span>
                     <input type="text" id="phone" name="phone">
-                    <br>
+                
                     <label for="email" class="labels">E-MAIL ADDRESS<span id="emailRequire" class="required radioHide">*</span></label><br>
                     <span class="errorMessage">Please enter a valid e-mail address.</span>
                     <input type="email" id="email" name="email">
-                    <br>
+                
                     <fieldset>
                         <legend>HOW WOULD YOU LIKE TO BE CONTACTED?</legend>
                         <label for="phonePref" class="radio">PHONE</label>
@@ -211,20 +221,24 @@
 
                     <label for="comments" class="labels">COMMENTS/QUESTIONS<span class="required">*</span></label>
                     <span class="errorMessage">Please enter your quesitons or comments.</span>
-                    <br>
+                
                     <textarea id="comments" name="comments"></textarea>
-                    <br>
+                
                     <input type="submit" name="mySubmit" value="Submit" id="mySubmit">
+                    <p id="contactConfirm"></p>
     		    </form>
 
-                <p id="contactMessage">Text about the form to the left and why they should fill it out.</p>
-                <p id="contactConfirm"></p>
+                <div id="contactMessage">
+                    <h3>Get in Touch</h3>
+                    <p>Whether you have a project in mind or would just like more information, I'd love to hear from you.</p>
+                    <p>Please feel free to reach out  with any questions or you can request a quote.</p>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <small>Copyright 2024 SMC Construction, LLC</small>
+        <p>&copy; Copyright 2024 SMC Construction, LLC</p>
     </footer>
 
 </body>
