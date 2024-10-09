@@ -220,11 +220,43 @@ main section {
 /* #endregion || Main Section */
 
 /* #region || Home Page */
-#home h3, #home p {
+#home {
+    line-height: 60px;
     text-align: center;
 }
-#home .gameForm {
+#home h3 {
+    font-size: 80px;
+    margin-top: 50px;
+    text-decoration: underline var(--orange);
+}
+#home p {
+    font-size: 40px;
+}
+.gameForm {
     text-align: center;
+    margin: 10px;
+}
+.gameForm label {
+    font-size: 35px;
+    text-decoration: underline;
+}
+#guessNumber {
+    width: 50px;
+    height: 50px;
+    border-radius: 0;
+    font-size: 30px;
+    text-align: center;
+}
+.submitGuess {
+    margin-top: 20px;
+    background-color: orange;
+    color: var(--lttext);
+    text-align: center;
+    height: 40px;
+    border-radius: none;
+    font-size: 20px;  
+    cursor: pointer;  
+    font-weight:bold;
 }
 /* #endregion || Home Page */
 
@@ -356,9 +388,6 @@ textarea {
 .labels {
     margin-left: 15px;
     margin-top: 5px;
-}
-#guessNumber {
-    height: 30px;
 }
 fieldset {
     width: 95%;
