@@ -74,7 +74,6 @@ html {
     background-color: var(--black);
 }
 body {
-    background-color: var(--ltbg);
     width: 1280px;
     height: 1024px;
     margin: 0 auto;
@@ -127,7 +126,7 @@ header {
    font-family: "Fugaz One", sans serif;
    text-align: center;
    position: relative;
-   color: var(--dksec);
+   color: white;
    font-size:100px;
    top: 100px;
    text-transform: uppercase;
@@ -231,10 +230,6 @@ main section {
 .galleryHide {
     display: none;
 }
-#services .gridContainer div:not(.firstDiv):hover {
-    background-color: var(--ltsec);
-    color: var(--dktext);
-}
 #services img:hover {
    filter: grayscale(0);
 }
@@ -261,6 +256,10 @@ main section {
     color: var(--lttext);
     grid-column: 1 / 4;
  }
+ #services .gridContainer div:not(.firstDiv):hover {
+    background-color: var(--ltsec);
+    color: var(--dktext);
+}
 .gridContainer img {
     width: 300px;
     border: solid 2px var(--dktext);
@@ -284,7 +283,6 @@ main section {
     background-color: var(--dksec);
     border-radius: 5px;
     margin-top: 10px;
-
 }
 /* #endregion || Services/Gallery */
 
@@ -396,17 +394,15 @@ input[type=radio] {
 
 /* #region || Dark Mode Styles */
 .darkMode {
-    background-color: var(--lttext);
     color: var(--dktext);
 }
 .darkMode .heroText h1 {
     color: var(--ltbg);
-    /*text-shadow: 2px 2px 0 var(--dktext), 2px -2px 0 var(--dktext), -2px 2px 0 orange, -2px -2px 0 var(--dktext);*/
 }
 .darkMode a:hover {
     color: var(--lttext);
 }
-.darkMode nav {
+.darkMode nav, .darkMode footer {
     background-color: var(--gray);
 }
 .darkMode nav ul a {
@@ -437,22 +433,21 @@ input[type=radio] {
 .darkMode #returnToMain:hover {
     border: solid 2px var(--lttext);
 }
+
 .darkMode form {
-    color: black;
-    background-color: var(--dkgray);
+    color: white;
+    /*background-color: var(--dkgray);*/
 }
+
 .darkMode .required {
     color: var(--dkred);
 }
 .darkMode #mySubmit {
-    background-color: var(--dkorange);
+    background-color: var(--orange);
     color: var(--lttext);
 }
 .darkMode svg {
     background-color: var(--dkbg);
     fill: var(--dktext);
-}
-.darkMode footer {
-    background-color: var(--dkorange);
 }
 /* #endregion || Dark Mode Styles */
