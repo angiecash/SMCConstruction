@@ -137,13 +137,27 @@ header {
 header button {
     position: relative;
     z-index: 1;
-    top: -5px;
+    top: -2px;
     left: 1200px;
     border: none;
     padding: 0;
 }
-#clickDark {
-    visibility: hidden;
+#toggleTheme {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#toggleTheme svg {
+    fill: var(--ltsec);
+    height: 30px;
+    width: 30px;
+}
+#toggleTheme svg:last-child {
+    display: none;
 }
 nav {
     background-color: var(--orange);
@@ -175,11 +189,11 @@ nav li a {
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
-    color: var(--lttext);
+    color: var(--gray);
 }
 .active {
-    color: var(--dktext);
-    border-bottom: none;
+    color: var(--lttext);
+    text-decoration: underline;
     font-size: 25px;
     padding: 17px;
 }
@@ -199,7 +213,11 @@ main section {
 }
 /* #endregion || Main Section */
 
-/* #region || Gallery */
+/* #region || Home Page */
+
+/* #endregion || Home Page */
+
+/* #region || Services/Gallery */
 #details {
    margin: 0 auto;
    width: 100%
@@ -222,7 +240,6 @@ main section {
 }
 .gridContainer {
     display: grid;
-    /*grid-template-columns: repeat(3, 1fr);*/
     align-items: center;  
     justify-content: center;  
     grid-auto-flow: dense;
@@ -269,7 +286,11 @@ main section {
     margin-top: 10px;
 
 }
-/* #endregion || Gallery */
+/* #endregion || Services/Gallery */
+
+/* #region || About */
+
+/* #endregion || About */
 
 /* #region || Contact */
 #contactPage {
@@ -382,14 +403,28 @@ input[type=radio] {
     color: var(--ltbg);
     /*text-shadow: 2px 2px 0 var(--dktext), 2px -2px 0 var(--dktext), -2px 2px 0 orange, -2px -2px 0 var(--dktext);*/
 }
+.darkMode a:hover {
+    color: var(--lttext);
+}
 .darkMode nav {
-    background-color: var(--dkorange);
+    background-color: var(--gray);
+}
+.darkMode nav ul a {
+    color: var(--orange);
 }
 .darkMode .active {
     color: var(--dktext);
 }
 .darkMode main section {
     background-color: var(--dkbg);
+}
+.darkMode #toggleTheme svg:first-child {
+    display: none;
+}
+.darkMode #toggleTheme svg:last-child {
+    display: block;
+    background-color: var(--white);
+    fill: var(--orange);
 }
 .darkMode .firstDiv {
    color: var(--dktext);
