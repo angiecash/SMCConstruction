@@ -384,6 +384,7 @@ form {
     height: 40px;
     margin-top: 5px;
     margin-bottom: 15px;
+    font-size: 22px;
 }
 input {
     border-radius: 10px;
@@ -393,6 +394,7 @@ textarea {
     height: 100px;
     border-radius: 10px;
     resize: none;
+    font-size: 22px;
 }
 .labels {
     margin-left: 15px;
