@@ -504,7 +504,6 @@ input[type=radio] {
     color: var(--lttext);
 }
 .darkMode svg {
-    background-color: var(--dkbg);
     fill: var(--dktext);
 }
 /* #endregion || Dark Mode Styles */
