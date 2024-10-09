@@ -69,7 +69,7 @@ table {
     --gray: #2D373C;
 }
 html {
-    font-family: Afacad Flux, Tahoma, sans-serif;
+    font-family: "Afacad Flux", Tahoma, sans-serif;
     box-sizing: border-box;
     color: var(--lttext);
     background-color: var(--black);
@@ -130,7 +130,7 @@ header {
    position: relative;
 }
 .heroText h1 {
-   font-family: "Fugaz One", sans serif;
+   font-family: "Fugaz One", sans-serif;
    text-align: center;
    position: relative;
    color: white;
@@ -253,7 +253,7 @@ main section {
     color: var(--lttext);
     text-align: center;
     height: 40px;
-    border-radius: none;
+    border-radius: 0;
     font-size: 20px;  
     cursor: pointer;  
     font-weight:bold;
